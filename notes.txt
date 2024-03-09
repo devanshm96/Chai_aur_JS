@@ -1,0 +1,78 @@
+SingLe Pg ApplicATION:
+app that works inside the browser and does not require page reload during use
+
+->SPA are all about serving an outstanding UX by trying to imitate a "natural" environment in the browser  - no pg reloads, no extra wait times.
+
+-> it is just one html pg that you visit which then loads all other content using Js
+Eg- gmail, fb, insta, trello - fetches data from backend and updates url w/o refreshing web pg
+
+
+Multi Pg ApplicATION:
+
+->work in a traditional way. Every change like display the data, submit data back to server, sends a request to server to render a new pg in browser.
+
+->whenever user navigates from one pg to another , a request is sent to server to send new HTML file for that URL. The server returns the file and then html file is loaded in the browser.
+(not a very smooth UX)
+
+
+->creste-react-app tool installs all libraries and packages required to build a React app. It creates default configuration for our react project and also adds some starter files in newly created app
+
+
+npm:
+->node package manager for Js. Helps u=you manage all 3rd party packages and libraries that you'll be installing for your app.
+->installed automatically when you install nodeJs
+
+npx:
+->node package runner. Used to To download and run a package temporarily.
+
+To switch bw Node versions: 
+    node -v
+    n <version>
+
+creating new reacting app:
+npx create-react-app <app name>
+
+npm run - starts a local server
+
+
+File Structure:
+>index.js mounts entire app in div with id root
+>index.js uses reactdom - a library to manipulate browser dom
+>whateve we write in return stmt is shown in browser
+
+JSX:
+>syntax extension to Javascrpt.
+>define react elements(or str. of react components) i.e look of the UI using syntax very similar to html 
+>unlike HTML, jsx couples rendering logic with other UI logic like event handling, state changing,data displaying etc.
+
+Eg.
+const imgAbout = "Beautiful river"
+<div>
+    <p>{imgAbout}</p>
+<div>
+
+JSX - behind the scenes: JSx is converted to Js using Babel
+
+Adding CSS to JSX:
+    Inline - in html, style attribute expects "String". In JSX, style attribute uses object
+    + all CSS properties which had hypen - become camel-case
+    >problem with inline css is - you have to use special libraries to use pseudo classes, media-queries etc. 
+
+    Id in html = Refs in React
+
+Create react elements dynamically-
+    Key helps React identify which items have changed/or added/or removed from dynamically generated list items.
+
+    2 imp points:
+    >key should uniquely identify a list item among its siblings
+    >key should be given to outer most elements which is being rendered inside the list
+
+Component-
+    let's you split UI into independent, reusable pieces. A component is Js class or function that optionally accepts some data and returns React elements that describes how a section of UI should appear.
+    Eg. BlogCard
+    2 types: -Functional 
+              Class-based
+    
+    After making the component, before the component can be imported, it needs to be exported. 2 ways:
+    >Default Export - to export only one module from a file
+    >Named Export: to export multiple modules from same file 
