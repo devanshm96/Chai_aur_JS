@@ -43,7 +43,8 @@ const items = { apple: true,
 
 console.log(items["mango"]);
 
-const myFunc = function(){}; // storing function definition in a variable
+//functions are first-class citizens - they can be stored in variables or passed to other functions as arguments
+const myFunc = function(){}; //function definition 
 
 console.log(typeof fruits);
 console.log(typeof items);
