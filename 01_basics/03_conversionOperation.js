@@ -4,7 +4,7 @@ let score="33";
 let valueInNumber = Number(score);
 // console.log(typeof(valueInNumber));
 
-score="33a"
+score="33n"
 valueInNumber=Number(score); //NaN
 // console.log(typeof(valueInNumber)); // number
 // console.log(valueInNumber);
@@ -41,14 +41,14 @@ let negativeValue=-value;
 let str1="hello";
 let str2 = " dev";
 let str3 = str1+str2;
-console.log(str3);
+// console.log(str3);
 
 console.log("1"+2);
 console.log(1+"2");
 console.log("1"+2+2);
-console.log(1+2+"2");
+console.log(1+2+"2"+" is a "+typeof(1+2+"2"));
 
 console.log(3+4*5%3);
 
-console.log(+true);
-console.log(+"");
+console.log(+true); // 1
+console.log(+""); //0

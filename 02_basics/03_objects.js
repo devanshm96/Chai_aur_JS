@@ -15,7 +15,7 @@ let JsUser = {
 // console.log(JsUser["name"]);
 
 // console.log(JsUser[mySym]);
-// console.log(typeof JsUser[mySym]);
+// console.log(typeof JsUser[mySym]); //string
 
 // Object.freeze(JsUser);
 JsUser.email = "123@123.com"
@@ -28,6 +28,6 @@ JsUser.greetingTwo = function() {
     console.log(`Hello JS user, ${this.name}`);
 }
 
-// console.log(JsUser.greeting);
+console.log(JsUser.greeting); //[Function (anonymous)]
 console.log(JsUser.greeting());
 JsUser.greetingTwo();

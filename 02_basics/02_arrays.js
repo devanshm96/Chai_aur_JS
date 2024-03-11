@@ -7,14 +7,14 @@ const dc = ["superman","flash","batman"]
 
 //returns a new array
 const allHeroes = marvel.concat(dc);
-console.log(allHeroes);
+console.log("All heroes concat: "+allHeroes);
 
 const allNewHeroes = [...marvel,...dc]; //spread 
-console.log(allNewHeroes);
+console.log("All heroes spread: "+allNewHeroes);
 
 const nestedArray = [1,2,3,[4,5,6],7,[8,9,[10,11]]]
 const flatArray = nestedArray.flat(Infinity)
-console.log(flatArray);
+console.log("Flat array: "+flatArray);
 
 console.log(Array.isArray("Devansh"))
 console.log(Array.from("Devansh"));

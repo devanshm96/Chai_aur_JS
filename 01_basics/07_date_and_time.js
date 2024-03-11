@@ -4,7 +4,7 @@ let date = new Date();
 // console.log(date.toString());
 // console.log(date.toDateString());
 // console.log(date.toTimeString());
-console.log(date.toLocaleString());
+// console.log(date.toLocaleString());
 date.toLocaleString('default', {
     weekday: "long"
 })
@@ -15,6 +15,6 @@ date.toLocaleString('default', {
 let myCreatedDate = new Date("09-03-2024");
 // console.log(myCreatedDate.toLocaleString());
 
-console.log(Date.now()); //milliseconds
-console.log(Math.floor(Date.now()/1000)); //seconds
-console.log(myCreatedDate.getTime());
+// console.log(Date.now()); //milliseconds
+// console.log(Math.floor(Date.now()/1000)); //seconds
+// console.log(myCreatedDate.getTime());

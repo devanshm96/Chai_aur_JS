@@ -2,9 +2,9 @@ const score=400;
 // console.log(score);
 
 const balance = new Number(100);
-// console.log(typeof balance);
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(2));
+console.log(typeof balance);
+console.log(balance.toString().length);
+console.log(balance.toFixed(2));
 
 let otherNumber = 23.893;
 // console.log(otherNumber.toPrecision(3));

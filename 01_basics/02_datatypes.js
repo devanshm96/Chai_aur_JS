@@ -15,7 +15,7 @@ S  String
 
 B  Boolean true/false
 
-B  BigInt - BigInt(’35”) + BigInt(”5”)
+B  BigInt - BigInt("35") + BigInt("5")
 
 U  undefined - let g = undefined;  or let g;  something not defined
 */
@@ -25,7 +25,7 @@ U  undefined - let g = undefined;  or let g;  something not defined
 
 const firstID = Symbol('000');
 const secondID = Symbol('000');
-// console.log(firstID===secondID);
+// console.log(firstID===secondID); //false
 
 const bigNumber = 123457890123456789n;
 
@@ -34,30 +34,31 @@ NON-PRIMITIVE aka Reference data types
 
 Objects - key-value pair, Array, Function, Date
 */
-const fruits = ["Apple","Banana","Orange"];
-const items = { apple: true,
+const fruits = ["Apple","Banana","Orange"]; //Array
+const items = { apple: true, //Object
                 orange: false,
                 mango : 67,
+                berry: 68,
                 gogo: undefined
             }
 
-console.log(items["mango"]);
+// console.log(items["mango"]);
+// console.log(items.berry);
 
 //functions are first-class citizens - they can be stored in variables or passed to other functions as arguments
 const myFunc = function(){}; //function definition 
 
-console.log(typeof fruits);
-console.log(typeof items);
-console.log(typeof myFunc);
+// console.log(typeof fruits);
+// console.log(typeof items);
+// console.log(typeof myFunc);
 
 // Stack Memory  (PRIMITIVE) ,Heap Memory (NON-PRIMITIVE)
-
 let firstName = "dev";
-let secondName = firstName;
-secondName = "mudgal";
+let secondName = firstName; // copy of value of firstname is assigned to secondname
+secondName = "mudgal"; 
 
-console.log(firstName);
 console.log(secondName);
+console.log(firstName);
 
 let userOne = {
     email:"123@gmail.com",
@@ -68,5 +69,5 @@ let userTwo = userOne;
 
 userTwo.email="userTwo@gmail.com";
 
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log("User 1 email: "+userOne.email);
+console.log("User 2 email: "+userTwo.email);
