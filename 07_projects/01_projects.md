@@ -19,3 +19,37 @@ btnList.forEach((btn)=>{
   })
 })
 ```
+
+## project 2
+
+```javascript
+const form = document.querySelector('form')
+
+// if we get height and weight values outside, just when script loads, they will take empty values
+// want to extract values after submit
+
+form.addEventListener('submit',(e)=>{
+  e.preventDefault() //prevent the submit action of form to the url/server
+  
+  // .value give string value
+  const height = parseFloat(form.querySelector('#height').value)
+  const weight = parseFloat(form.querySelector('#weight').value)
+  
+  const results = form.querySelector('#results')
+
+  if(height===''|| height<0 || isNaN(height)){
+    results.innerHTML="Please give valid height"
+  }else if(weight===''|| weight<0|| isNaN(weight)){
+    results.innerHTML="Please give valid weight"
+  }else{
+    const bmi = (weight*100*100/(height*height)).toFixed(2)
+    if(bmi<18.5){
+      results.innerHTML = `<span>${bmi} : Underweight</span>`
+    }else if(bmi>18.5 && bmi<24.5){
+      results.innerHTML = `<span>${bmi} : Normal Range</span>`
+    }else{
+      results.innerHTML = `<span>${bmi} : Overweight</span>`
+    }
+  }
+})
+```
