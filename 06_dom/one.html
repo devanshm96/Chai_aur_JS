@@ -1,0 +1,40 @@
+<!-- document type is html 5 -->
+<!-- DOM for web, className is used instead of class because class is a reserved keyword in JS-->
+<!DOCTYPE html> 
+<!-- document starts here -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: aliceblue;
+        }
+        </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">Test Text</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aperiam vitae numquam ad delectus officiis sint</p>
+    </div>
+    <ul>
+        <li class="li-item">One</li>
+        <li class="li-item">Two</li>
+        <li class="li-item">Two</li>
+        <li class="li-item">Three</li>
+        <li class="li-item">Four</li>
+    </ul>
+    <!-- 
+    const liList=document.querySelectorAll('li')
+    liList -> NodeList(3) [li, li, li]
+    liList[0].style.color='red'
+    liList.forEach((l)=>l.style.color='blue')
+
+    document.getElementsByClassName('li-item')
+    const myHTMLCollection = document.getElementsByClassName('li-item')
+    Array.from(myHTMLCollection)
+     -->
+</body>
+</html>
